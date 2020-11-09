@@ -1,0 +1,1 @@
+add_library(lnp STATIC lnp.h lnp.c)
