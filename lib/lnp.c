@@ -90,7 +90,7 @@ ssize_t Writen(int fd, const void* buf, size_t count) {
 ssize_t readn(int fd, void* buf, size_t count) {
     size_t nleft = count;
     ssize_t nread = 0;
-    const char* ptr = (const char*)buf;
+    char* ptr = (char*)buf;
 
     while (nleft > 0) {
         if ((nread = read(fd, ptr, nleft)) == -1) {
